@@ -123,6 +123,55 @@ button
 .login-page
 	height: 100vh
 
+	&__logo
+		width: 283px
+
+	&__heading
+		font-size: 40px
+		font-weight: bold
+		text-transform: uppercase
+		line-height: 1.2
+		&--small
+			display: block
+			font-size: 20px
+			font-weight: normal
+			text-transform: none
+
+	&__li-wrapper
+		position: relative
+		background-color: darken(white, 3%)
+		&:after
+			position: absolute
+			top: 46px
+			right: -10px
+			transform: rotate(45deg)
+			content: ''
+			width: 20px
+			height: 20px
+			background-color: darken(white, 3%)
+
+	&__li-heading
+		font-weight: bold
+
+	&__ul
+	&__li
+		position: relative
+		font-weight: normal
+		list-style-position: inside
+		list-style-type: none
+		&:before
+			position: relative
+			display: inline-block
+			content: '\f00c'
+			margin: 8px 8px 0 0
+			color: lighten($success, 6%)
+			font-family: 'FontAwesome'
+			font-size: 14px
+
+	&__ico
+		width: 60px
+		height: auto
+
 
 
 

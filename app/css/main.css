@@ -4848,6 +4848,50 @@ button {
 
 .login-page {
   height: 100vh; }
+  .login-page__logo {
+    width: 283px; }
+  .login-page__heading {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2; }
+    .login-page__heading--small {
+      display: block;
+      font-size: 20px;
+      font-weight: normal;
+      text-transform: none; }
+  .login-page__li-wrapper {
+    position: relative;
+    background-color: #f7f7f7; }
+    .login-page__li-wrapper:after {
+      position: absolute;
+      top: 46px;
+      right: -10px;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-color: #f7f7f7; }
+  .login-page__li-heading {
+    font-weight: bold; }
+  .login-page__li {
+    position: relative;
+    font-weight: normal;
+    list-style-position: inside;
+    list-style-type: none; }
+    .login-page__li:before {
+      position: relative;
+      display: inline-block;
+      content: '\f00c';
+      margin: 8px 8px 0 0;
+      color: #0ca622;
+      font-family: 'FontAwesome';
+      font-size: 14px; }
+  .login-page__ico {
+    width: 60px;
+    height: auto; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
