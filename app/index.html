@@ -17,7 +17,7 @@
 </head>
 <body>
 	<!-- .site-header -->
-	<header class="container py-5 login-page">
+	<div class="container py-5 login-page">
 		<div class="row">
 			<div class="col-12 mb-5 text-center">
 				<img src="https://info-gkh.com.ua/user_uploads/1975_1508917047/15105953371.jpg" alt="" class="login-page__logo">
@@ -25,6 +25,7 @@
 			<div class="col-12 mb-5 text-center">
 				<h1 class="login-page__heading">Електронний кабінет <span class="login-page__heading login-page__heading--small">споживача житлово-комунальних послуг</span></h1>
 			</div>
+			<!-- left side -->
 			<div class="col-7 py-4 login-page__li-wrapper">
 				<p class="mb-1 pl-4 login-page__li-heading">В кабінеті ви можете:</p>
 				<ul class="pl-4 login-page__ul">
@@ -37,30 +38,50 @@
 					<li class="login-page__li">замовити повірку, ремонт, пломбування лічильників</li>
 					<li class="login-page__li">оформити договір, переглянути укладений договір</li>
 				</ul>
-				<div class="row d-flex justify-content-around">
-					<!-- ico -->
-					<div class="col-2 text-center">
-						<img src="img/cold.png" alt="" class="login-page__ico">
-					</div>
-					<!-- ico -->
-					<div class="col-2 text-center">
-						<img src="img/energy.png" alt="" class="login-page__ico">
-					</div>
-					<!-- ico -->
-					<div class="col-2 text-center">
-						<img src="img/gas.png" alt="" class="login-page__ico">
-					</div>
-					<!-- ico -->
-					<div class="col-2 text-center">
-						<img src="img/hot.png" alt="" class="login-page__ico">
+				<div class="row pt-4 pb-2">
+					<div class="col-8 offset-2">
+						<div class="row justify-content-around">
+							<!-- ico -->
+							<div class="col text-center">
+								<img src="img/cold.png" alt="" class="login-page__ico">
+							</div>
+							<!-- ico -->
+							<div class="col text-center">
+								<img src="img/energy.png" alt="" class="login-page__ico">
+							</div>
+							<!-- ico -->
+							<div class="col text-center">
+								<img src="img/gas.png" alt="" class="login-page__ico">
+							</div>
+							<!-- ico -->
+							<div class="col text-center">
+								<img src="img/hot.png" alt="" class="login-page__ico">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
-				<div class="login-page__form-wrapper"></div>
+			<!-- right side -->
+			<div class="col-5 pt-5">
+				<form class="ml-3 login-page__form-wrapper">
+					<div class="form-group">
+						<input type="text" class="login-page__form-input pl-3" id="loginAcc" placeholder="Особистий рахунок">
+					</div>
+					<div class="form-group">
+						<input type="password" class="login-page__form-input pl-3" id="loginPass" placeholder="Пароль">
+					</div>
+					<a href="#" class="d-block mb-4 text-left login-page__form-link">Забули пароль?</a>
+					<button type="submit" class="button button--blue login-page__form-button">Увійти</button>
+					<p class="p-2 mb-0 login-page__form-text text-center">або</p>
+					<a href="#" class="d-block text-center login-page__form-link">Зареєструватись</a>
+				</form>
+			</div>
+			<div class="col-12 mt-5 text-center login-page__footer">
+				<p class="mb-1 login-page__footer-text">швидка реєстрація за одну хвилину</p>
+				<p class="login-page__footer-text">технічна підтримка<span class="ml-2">0800-00-00-00</span></p>
 			</div>
 		</div>
-	</header>
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
