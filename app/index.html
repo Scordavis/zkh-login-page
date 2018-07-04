@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+	<title>Характеристики будинку та квартир</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Template Basic Images Start -->
+	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
+	<!-- Template Basic Images End -->
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<!-- .site-header -->
+	<header class="container-fluid site-header site-header--eights">
+		<div class="container h-100">
+			<div class="row h-100 align-items-center">
+				<div class="col-5 text-left site-header__title-block">
+					<h1 class="mb-0 site-header__title">Характеристики будинку та квартир</h1>
+				</div>
+				<div class="col">
+					<div class="row justify-content-around">
+						<button class="py-2 px-4 button button--white site-header__button">№ 17</button>
+						<button class="py-2 px-4 button button--white site-header__button">вул. Левая</button>
+						<button class="py-2 px-4 button button--white site-header__button">м. Гола Пристань</button>
+						<button class="py-2 px-4 button button--white site-header__button">Херсонська обл.</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid py-5 apartment">
+		<div class="container apartment__wrapper">
+			<div class="row">
+				<!-- .apartment__characteristics -->
+				<div class="col-6 apartment__characteristics">
+					<!-- start apartment__table -->
+					<table class="pl-4 apartment__table">
+						<!-- start thead -->
+						<thead>
+							<tr class="apartment__row apartment__row--gray">
+								<td class="apartment__col">Технічні характеристики будинку</td>
+								<td class="apartment__col"></td>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- start row -->
+							<tr class="apartment__row">
+								<td class="apartment__col">Номер</td>
+								<td class="apartment__col">17</td>
+							</tr>
+							<!-- start row -->
+							<tr class="apartment__row">
+								<td class="apartment__col" data-appartament-imfo="">Рік будівництва</td>
+								<td class="apartment__col" data-appartament-value="">1985</td>
+							</tr>
+							<!-- start row -->
+							<tr class="apartment__row">
+								<td class="apartment__col" data-appartament-imfo="">Рік останнього капітального ремонту</td>
+								<td class="apartment__col" data-appartament-value="">2013</td>
+							</tr>
+							<!-- start row -->
+							<tr class="apartment__row">
+								<td class="apartment__col" data-appartament-imfo="">Пам’ятник архітектури</td>
+								<td class="apartment__col" data-appartament-value="">Ні</td>
+							</tr>
+							<!-- start row -->
+							<tr class="apartment__row">
+								<td class="apartment__col" data-appartament-imfo="">Група будинку</td>
+								<td class="apartment__col" data-appartament-value="">4</td>
+							</tr>
+							<!-- start row -->
+							<tr class="apartment__row">
+								<td class="apartment__col" data-appartament-imfo="">Кількість поверхів</td>
+								<td class="apartment__col" data-appartament-value="">9</td>
+							</tr>
+							<!-- start row -->
+							<tr class="apartment__row">
+								<td class="apartment__col" data-appartament-imfo="">Кількість підземних поверхів</td>
+								<td class="apartment__col" data-appartament-value="">5</td>
+							</tr>
+							<!-- start row -->
+							<tr class="apartment__row">
+								<td class="apartment__col" data-appartament-imfo="">Кількість квартир/нежитлових приміщень</td>
+								<td class="apartment__col" data-appartament-value=""></td>
+							</tr>
+							<!-- start row -->
+							<tr class="apartment__row">
+								<td class="apartment__col" data-appartament-imfo="">Кількість м.кв. загальної площі</td>
+								<td class="apartment__col" data-appartament-value="">34953</td>
+							</tr>
+							<!-- start row -->
+							<tr class="apartment__row">
+								<td class="apartment__col" data-appartament-imfo="">Житлові приміщення (м<sup>2</sup>)</td>
+								<td class="apartment__col" data-appartament-value="">3 444 <sup>2</sup></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- .apartment__info -->
+				<div class="col-6 apartment__info">
+					<div class="row no-gutters">
+						<!-- apartment__img -->
+						<div class="col-12 apartment__img-wrapper" style="background-image: url(img/placeholder.jpg);">
+							<!-- Serega, posle zagruzki kartinki prjach formu cherez inlainovyj stil'  -->
+							<form action="" enctype="multipart/form-data" class="apartment__form" style="display: block;">
+								<label for="apartment-upload" class="apartment__file-wrapper"><span class="apartment__file-label">натисніть, щоб додати фото</span></label>
+								<input id="apartment-upload" class="apartment__file-input" type="file"/>
+							</form>
+						</div>
+						<!-- apartment__info -->
+						<div class="col-12 mt-4">
+							<!-- wrapper for bootstrap padding unblock -->
+							<div class="apartment__data">
+								<p class="apartment__data-heading">Квартири/нежитлові приміщення:</p>
+								<p class="apartment__data-text">Загальна кількість квартир: <span data-apartament-info="">1</span></p>
+								<p class="apartment__data-text">в т.ч.: 1 кімн. - <span data-apartament-info="">0</span></p>
+								<p class="apartment__data-text">2 кімн. - <span data-apartament-info="">1</span></p>
+								<p class="apartment__data-text">3 кімн. - <span data-apartament-info="">0</span></p>
+								<p class="apartment__data-text">5 і більше - <span data-apartament-info="">0</span></p>
+							</div>
+						</div>
+						<!-- apartment__modal-btn -->
+						<div class="col-12 pt-2">
+							<!-- start row buttons -->
+							<div class="row mt-3 justify-content-between">
+								<div class="col-6 col-xl-4">
+									<a href="#modal-49" data-fancybox class="mb-3 apartment__modal-btn">Квартира № <span data-apartment-number="">49</span></a>
+								</div>
+								<div class="col-6 col-xl-4">
+									<a href="#modal-49" data-fancybox class="mb-3 apartment__modal-btn">Квартира № <span data-apartment-number="">15</span></a>
+								</div>
+								<div class="col-6 col-xl-4">
+									<a href="#modal-49" data-fancybox class="mb-3 apartment__modal-btn">Квартира № <span data-apartment-number="">33</span></a>
+								</div>
+								<div class="col-6 col-xl-4">
+									<a href="#modal-49" data-fancybox class="mb-3 apartment__modal-btn">Квартира № <span data-apartment-number="">78</span></a>
+								</div>
+								<div class="col-6 col-xl-4">
+									<a href="#modal-49" data-fancybox class="mb-3 apartment__modal-btn">Квартира № <span data-apartment-number="">1</span></a>
+								</div>
+								<div class="col-6 col-xl-4">
+									<a href="#modal-49" data-fancybox class="mb-3 apartment__modal-btn">Квартира № <span data-apartment-number="">24</span></a>
+								</div>
+								<div class="col-6 col-xl-4">
+									<a href="#modal-49" data-fancybox class="mb-3 apartment__modal-btn">Квартира № <span data-apartment-number="">123</span></a>
+								</div>
+								<div class="col-6 col-xl-4">
+									<a href="#modal-49" data-fancybox class="mb-3 apartment__modal-btn">Квартира № <span data-apartment-number="">55</span></a>
+								</div>
+								<div class="col-6 col-xl-4">
+									<a href="#modal-49" data-fancybox class="mb-3 apartment__modal-btn">Квартира № <span data-apartment-number="">26</span></a>
+								</div>
+							</div>
+							<!-- start row button delete -->
+							<div class="row mt-3 no-gutters justify-content-between">
+								<div class="col-12 col-xl-4">
+									<button class="apartment__modal-btn apartment__modal-btn--red" id="deleteHouse">Видалити будинок</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal -->
+	<div class="container apartment-modal" id="modal-49" style="display: none;">
+		<div class="row">
+			<!-- breadcrumbs -->
+			<p class="col-12 mb-3 apartment-modal__breadcrumbs">Житловий фонд<span class="apartment-modal__breadcrumbs--item">м. Гола Пристань</span><span class="apartment-modal__breadcrumbs--item">Херсонська область</span><span class="apartment-modal__breadcrumbs--item">вул.Левая</span><span class="apartment-modal__breadcrumbs--item">будинок № 17</span><span class="apartment-modal__breadcrumbs--item apartment-modal__breadcrumbs--active">Квартира № 49</span></p>
+			<!-- left side -->
+			<div class="col-5">
+				<table class="pl-4 apartment__table apartment-modal__table">
+					<!-- start thead -->
+					<thead>
+						<tr class="apartment__row apartment__row--gray">
+							<td class="apartment__col">Технічні характеристики будинку</td>
+							<td class="apartment__col"></td>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- start row -->
+						<tr class="apartment__row apartment-modal__row">
+							<td class="apartment__col">Номер</td>
+							<td class="apartment__col">17</td>
+						</tr>
+						<!-- start row -->
+						<tr class="apartment__row apartment-modal__row">
+							<td class="apartment__col" data-appartament-imfo="">Рік будівництва</td>
+							<td class="apartment__col" data-appartament-value="">1985</td>
+						</tr>
+						<!-- start row -->
+						<tr class="apartment__row apartment-modal__row">
+							<td class="apartment__col" data-appartament-imfo="">Рік останнього капітального ремонту</td>
+							<td class="apartment__col" data-appartament-value="">2013</td>
+						</tr>
+						<!-- start row -->
+						<tr class="apartment__row apartment-modal__row">
+							<td class="apartment__col" data-appartament-imfo="">Пам’ятник архітектури</td>
+							<td class="apartment__col" data-appartament-value="">Ні</td>
+						</tr>
+						<!-- start row -->
+						<tr class="apartment__row apartment-modal__row">
+							<td class="apartment__col" data-appartament-imfo="">Група будинку</td>
+							<td class="apartment__col" data-appartament-value="">4</td>
+						</tr>
+						<!-- start row -->
+						<tr class="apartment__row apartment-modal__row">
+							<td class="apartment__col" data-appartament-imfo="">Кількість поверхів</td>
+							<td class="apartment__col" data-appartament-value="">9</td>
+						</tr>
+						<!-- start row -->
+						<tr class="apartment__row apartment-modal__row">
+							<td class="apartment__col" data-appartament-imfo="">Кількість підземних поверхів</td>
+							<td class="apartment__col" data-appartament-value="">5</td>
+						</tr>
+						<!-- start row -->
+						<tr class="apartment__row apartment-modal__row">
+							<td class="apartment__col" data-appartament-imfo="">Кількість квартир/нежитлових приміщень</td>
+							<td class="apartment__col" data-appartament-value=""></td>
+						</tr>
+						<!-- start row -->
+						<tr class="apartment__row apartment-modal__row">
+							<td class="apartment__col" data-appartament-imfo="">Кількість м.кв. загальної площі</td>
+							<td class="apartment__col" data-appartament-value="">34953</td>
+						</tr>
+						<!-- start row -->
+						<tr class="apartment__row apartment-modal__row">
+							<td class="apartment__col" data-appartament-imfo="">Житлові приміщення (м<sup>2</sup>)</td>
+							<td class="apartment__col" data-appartament-value="">3 444 <sup>2</sup></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- right side -->
+			<div class="col-7">
+				<p class="mb-2 apartment-modal__heading">Відомості про мешканців квартири:</p>
+				<p class="mb-0 apartment-modal__data">Особовий рахунок власника:<span class="apartment-modal__data--span" data-modal-account="">258654</span></p>
+				<p class="mb-0 apartment-modal__data">Усього зареєстрованих осіб:<span class="apartment-modal__data--span" data-modal-amount="">589</span></p>
+				<!-- start apartment__table -->
+					<table class="mt-4 apartment__table">
+						<!-- start thead -->
+						<thead>
+							<tr class="apartment__row apartment__row--gray apartment-modal__row apartment-modal__row--gray">
+								<td class="apartment__col apartment-modal__col">№</td>
+								<td class="apartment__col apartment-modal__col">П.І.Б.</td>
+								<td class="apartment__col apartment-modal__col">Родинні стосунки</td>
+								<td class="apartment__col apartment-modal__col">Власник</td>
+								<td class="apartment__col apartment-modal__col">Пільги та субсидії</td>
+								<td class="apartment__col apartment-modal__col">Дата народження</td>
+								<td class="apartment__col apartment-modal__col">Паспорт/свідоцтво</td>
+								<td class="apartment__col apartment-modal__col">&nbsp;</td>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- start row -->
+							<tr class="apartment__row apartment-modal__row">
+								<td class="apartment__col apartment-modal__col">1</td>
+								<td class="apartment__col apartment-modal__col">Марченко Анастасія Вікторівна</td>
+								<td class="apartment__col apartment-modal__col">Відмінні</td>
+								<td class="apartment__col apartment-modal__col">Марченко Анастасія Вікторівна</td>
+								<td class="apartment__col apartment-modal__col">Немає</td>
+								<td class="apartment__col apartment-modal__col">04.10.1982</td>
+								<td class="apartment__col apartment-modal__col">ВК744848</td>
+								<td class="apartment__col apartment-modal__col"></td>
+							</tr>
+						</tbody>
+					</table>
+				<!-- start apartment__table -->
+					<table class="mt-4 apartment__table">
+						<!-- start thead -->
+						<thead>
+							<tr class="apartment__row apartment__row--gray apartment-modal__row apartment-modal__row--gray">
+								<td class="apartment__col apartment-modal__col">Підприємство</td>
+								<td class="apartment__col apartment-modal__col">Нарахування</td>
+								<td class="apartment__col apartment-modal__col">Перерахунки</td>
+								<td class="apartment__col apartment-modal__col">Пеня</td>
+								<td class="apartment__col apartment-modal__col">Показ. лічільника</td>
+								<td class="apartment__col apartment-modal__col">Пільги та субсидії</td>
+								<td class="apartment__col apartment-modal__col">Оплата</td>
+								<td class="apartment__col apartment-modal__col">Сальдо</td>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- start row -->
+							<tr class="apartment__row apartment-modal__row">
+								<td class="apartment__col apartment-modal__col">1</td>
+								<td class="apartment__col apartment-modal__col">2566 грн</td>
+								<td class="apartment__col apartment-modal__col">-25896 грн</td>
+								<td class="apartment__col apartment-modal__col">258000 грн</td>
+								<td class="apartment__col apartment-modal__col">585688</td>
+								<td class="apartment__col apartment-modal__col">04.10.1982</td>
+								<td class="apartment__col apartment-modal__col">ВК744848</td>
+								<td class="apartment__col apartment-modal__col"></td>
+							</tr>
+						</tbody>
+					</table>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
